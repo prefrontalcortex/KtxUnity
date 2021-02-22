@@ -181,6 +181,7 @@ namespace KtxUnity {
                 gf,
                 mipmap ? TextureCreationFlags.MipChain : TextureCreationFlags.None
                 );
+            texture.anisoLevel = 3; // TODO find a better place for this
             Profiler.EndSample();
 
             if(mipmap) {
